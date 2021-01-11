@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Matriz PEEA</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Inicio</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-integrantes">
+          INTEGRANTES - EQUIPO
+        </button>
+      </li>
+    </ul>
+
+
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="dist/img/Logo-fis.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Dirección Estrategica</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <!-- <img src="#" class="img-circle elevation-2" alt="User Image"> -->
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Séptimo - 2020 - II</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-plus"></i>
+              <p>
+                Opciones
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-target="#modal-integrantes">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Matriz PEEA</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Modal intgreantes -->
+  <div class="modal fade" id="modal-integrantes" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">INTEGRANTES - EQUIPO</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <label id="vx"></label>
+
+          <label id="vy"></label> -->
+            <ul>
+              <li> Arroyo Machuca Nevill</li>
+              <li> Camacllanqui Villalva  Deyvid Eleazar </li>
+              <li> Chuquimantari Huaranga Denilson </li>
+              <li> Guillen Beltran Xavier </li>
+              <li> Huaroc Huaman Luz Mavila </li>
+              <li> Perez Collachagua Jean Pool </li>
+            </ul>
+
+        </div>
+        <!-- CAnvas -->
+
+
+        <!-- <div>
+          <canvas id="myChart" width="300" height="300"></canvas>
+        </div> -->
+
+        <!-- Estategias REcomendadas -->
+
+
+
+
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">INGRESAR DATOS MATRIZ PEEA</h1>
+          </div><!-- /.col -->
+
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Financiero -->
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">FINANCIERO</h3>
+              </div>
+
+              <div class="card-body">
+
+                <table>
+                  <tr>
+                      <th colspan="2">POSICION ESTRATEGIA INTERNA</th>
+                  </tr>
+                  <tr>
+                      <th>FORTALEZA FINANCIERA (FF)</th>
+                      <th>1 MEJOR 6 PEOR</th>
+                  </tr>
+                  <form>
+                      <tr>
+                          <td>Retorno en la inversión</td>
+                          <td><input type="number" min="1" max="6" id="f1"></td>
+                      </tr>
+                      <tr>
+                          <td>Apalancamiento</td>
+                          <td><input type="number" min="1" max="6" id="f2" ></td>
+                      </tr>
+                      <tr>
+                          <td>Liquidez</td>
+                          <td><input type="number" min="1" max="6" id="f3"></td>
+                      </tr>
+                      <tr>
+                          <td>Capital requerido versus capital disponible</td>
+                          <td><input type="number" min="1" max="6" id="f4"></td>
+                      </tr>
+                      <tr>
+                          <td>Flujo de caja</td>
+                          <td><input type="number" min="1" max="6" id="f5"></td>
+                      </tr>
+                      <tr>
+                        <td>Facilidad de salida del mercado</td>
+                        <td><input type="number" min="1" max="6" id="f6"></td>
+                      </tr>
+                      <tr>
+                        <td>Riesgo involucrado en el negocio</td>
+                        <td><input type="number" min="1" max="6" id="f7"></td>
+                      </tr>
+                      <tr>
+                        <td>Rotación de inventarios</td>
+                        <td><input type="number" min="1" max="6" id="f8"></td>
+                      </tr>
+                      <tr>
+                        <td>Economías de escala y de experiencia</td>
+                        <td><input type="number" min="1" max="6" id="f9"></td>
+                      </tr>
+
+                      <tr>
+
+                      <td class="2">
+                        <input type="button" class="btn btn-warning" value="Datos Random" onclick="vrandom_pos_ff();">
+                        <input type="button" class="btn btn-success" value="Valor FF" onclick="financiero();">
+                      </td>
+                      <td id="valorFF"></td>
+                      </tr>
+                     </form>
+
+              </table>
+
+              </div>
+            </div>
+            <!-- Ventaja Competitiva -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">VENTAJA COMPETITIVA</h3>
+              </div>
+
+              <div class="card-body">
+
+                <table>
+                  <tr>
+                      <th colspan="2">POSICION ESTRATEGIA INTERNA</th>
+                  </tr>
+                  <tr>
+                      <th>VENTAJA COMPETITIVA (CV)</th>
+                      <th>-1 MEJOR -6 PEOR</th>
+                  </tr>
+                  <form>
+                      <tr>
+                          <td>Participación en el mercado</td>
+                          <td><input type="number" min="-6" max="-1" id="vc1" ></td>
+                      </tr>
+                      <tr>
+                          <td>Calidad del producto</td>
+                          <td><input type="number" min="-6" max="-1" id="vc2" ></td>
+                      </tr>
+                      <tr>
+                          <td>Ciclo de vida del producto</td>
+                          <td><input type="number" min="-6" max="-1" id="vc3" ></td>
+                      </tr>
+                      <tr>
+                          <td>Ciclo del reemplazo del producto </td>
+                          <td><input type="number" min="-6" max="-1" id="vc4" ></td>
+                      </tr>
+                      <tr>
+                          <td>Lealtad del consumidor</td>
+                          <td><input type="number" min="-6" max="-1" id="vc5" ></td>
+                      </tr>
+                      <tr>
+                        <td>Utilización de la capacidad de los competidores</td>
+                        <td><input type="number" min="-6" max="-1" id="vc6" ></td>
+                      </tr>
+                      <tr>
+                        <td>Conocimiento Tecnológico</td>
+                        <td><input type="number" min="-6" max="-1" id="vc7" ></td>
+                      </tr>
+                      <tr>
+                        <td>Integración vertical</td>
+                        <td><input type="number" min="-6" max="-1" id="vc8" ></td>
+                      </tr>
+                      <tr>
+                        <td>Velocidad de integración de nuevos productos</td>
+                        <td><input type="number" min="-6" max="-1" id="vc9" ></td>
+                      </tr>
+
+                      <tr>
+                      <td class="2">
+                        <input type="button" class="btn btn-warning" value="Datos Random" onclick="vrandom_pos_vc();">
+                        <input type="button" class="btn btn-primary" value="Valor VC" onclick="vcompetitiva();"></td>
+                      <td id="valorVC"></td>
+                      </tr>
+                     </form>
+
+              </table>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-lg-6">
+            <!-- Estabilidad del Entorno -->
+            <div class="card card-dark">
+              <div class="card-header">
+                <h3 class="card-title">ESTABILIDAD DEL ENTORNO</h3>
+              </div>
+
+              <div class="card-body">
+
+                <table>
+                  <tr>
+                      <th colspan="2">POSICION ESTRATEGICA EXTERNA</th>
+                  </tr>
+                  <tr>
+                      <th>ESTABILIDAD DEL ENTORNO (EE)</th>
+                      <th>-1 MEJOR -6 PEOR</th>
+                  </tr>
+                  <form>
+                      <tr>
+                          <td>Cambios tecnológicos</td>
+                          <td><input type="number" min="-6" max="-1" id="ee1"></td>
+                      </tr>
+                      <tr>
+                          <td>Tasa de inflación</td>
+                          <td><input type="number" min="-6" max="-1" id="ee2"></td>
+                      </tr>
+                      <tr>
+                          <td>Variabilidad de la demanda</td>
+                          <td><input type="number" min="-6" max="-1" id="ee3"></td>
+                      </tr>
+                      <tr>
+                          <td>Rango de precios de productos competitivos </td>
+                          <td><input type="number" min="-6" max="-1" id="ee4"></td>
+                      </tr>
+                      <tr>
+                          <td>Barreras de entrada al mercado</td>
+                          <td><input type="number" min="-6" max="-1" id="ee5"></td>
+                      </tr>
+                      <tr>
+                        <td>Rivalidad/Presión competitiva</td>
+                        <td><input type="number" min="-6" max="-1" id="ee6"></td>
+                      </tr>
+                      <tr>
+                        <td>Elasticidad de precios de la demanda</td>
+                        <td><input type="number" min="-6" max="-1" id="ee7"></td>
+                      </tr>
+                      <tr>
+                        <td>Presión de los productos sustitutos</td>
+                        <td><input type="number" min="-6" max="-1" id="ee8"></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td><input type="number" min="-6" max="-1" id="" disabled></td>
+                      </tr>
+
+                      <tr>
+                      <td class="2">
+                        <input type="button" class="btn btn-warning" value="Datos Random" onclick="vrandom_pos_ee();">
+                        <input type="button" class="btn btn-dark" value="Valor EE" onclick="estEntorno();"></td>
+                      <td id="valorEE"></td>
+                      </tr>
+                     </form>
+
+              </table>
+
+              </div>
+            </div>
+
+            <!-- Fortaleza de la industria -->
+            <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">FORTALEZA DE LA INDUSTRIA</h3>
+              </div>
+
+              <div class="card-body">
+
+                <table>
+                  <tr>
+                      <th colspan="2">POSICION ESTRATEGIA EXTERNA</th>
+                  </tr>
+                  <tr>
+                      <th>FORTALEZA DE LA INDUSTRIA (FI)</th>
+                      <th>1 MEJOR 6 PEOR</th>
+                  </tr>
+                  <form>
+                      <tr>
+                          <td>Potencial de crecimiento</td>
+                          <td><input type="number" min="1" max="6" id="fi1"></td>
+                      </tr>
+                      <tr>
+                          <td>Potencial de utilidades</td>
+                          <td><input type="number" min="1" max="6" id="fi2"></td>
+                      </tr>
+                      <tr>
+                          <td>Estabilidad financiera</td>
+                          <td><input type="number" min="1" max="6" id="fi3"></td>
+                      </tr>
+                      <tr>
+                          <td>Conocimiento tecnológico</td>
+                          <td><input type="number" min="1" max="6" id="fi4"></td>
+                      </tr>
+                      <tr>
+                          <td>Utilización de recursos</td>
+                          <td><input type="number" min="1" max="6" id="fi5"></td>
+                      </tr>
+                      <tr>
+                        <td>Intensidad de Capital</td>
+                        <td><input type="number" min="1" max="6" id="fi6"></td>
+                      </tr>
+                      <tr>
+                        <td>Facilidad de entrada al mercado</td>
+                        <td><input type="number" min="1" max="6" id="fi7"></td>
+                      </tr>
+                      <tr>
+                        <td>Productividad/Utilización de la capacidad</td>
+                        <td><input type="number" min="1" max="6" id="fi8"></td>
+                      </tr>
+                      <tr>
+                        <td>Poder de negocicación de los productores</td>
+                        <td><input type="number" min="1" max="6" id="fi9"></td>
+                      </tr>
+
+                      <tr>
+                      <td class="2">
+                        <input type="button" class="btn btn-warning" value="Datos Random" onclick="vrandom_pos_fi();">
+                        <input type="button" class="btn btn-danger" value="Valor FI" onclick="fIndustria();"></td>
+                      <td id="valorFI"></td>
+                      </tr>
+                     </form>
+
+              </table>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+        <!-- MODAL -->
+          <div class="">
+              <!-- Button trigger modal -->
+
+              <p> <strong> HACER CLICK EN EL BOTTON PARA OBTENER EL GRÁFICO - ESTRATEGIAS RECOMENDADAS </strong></p>
+
+              <div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default"
+                onclick="resultado()">
+                  OBTENER RESULTADOS MATRIZ PEEA
+                </button>
+              </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-default" >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Resultados PEEA</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- <label id="vx"></label>
+
+                    <label id="vy"></label> -->
+                    <div class="info-box">
+                      <span class="info-box-icon bg-info elevation-1"><i class="fas fa-times"></i></span>
+
+                      <div class="info-box-content">
+                        <h1 id="vx"></h1>
+                      </div>
+                      <!-- /.info-box-content -->
+                    </div>
+                    <div class="info-box">
+                      <span class="info-box-icon bg-info elevation-1"><i class="fas fa-yandex-international"></i>Y</span>
+
+                      <div class="info-box-content">
+                        <h1 id="vy"></h1>
+                      </div>
+                      <!-- /.info-box-content -->
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col">
+                        <h6 style="position: relative;color:black ;margin-left:100px;" >Conservador</h6>
+                    </div>
+                    <div class="col">
+                        <h6 style="position: relative;color:black ;margin-left:100px;" >Agresivo</h6>
+                    </div>
+
+                  </div>
+                  <!-- CAnvas -->
+                  <div>
+                    <canvas id="myPoligono" width="400" height="400"></canvas>
+                  </div>
+
+                  <div class="row align-items-start">
+                    <div class="col">
+                      <h6 style="position: relative;color:black;margin-left:100px;" >Defensivo</h6>
+                  </div>
+                  <div class="col">
+                      <h6 style="position: relative;color:black;margin-left:100px;" >Competitivo</h6>
+                  </div>
+
+                  </div>
+                  <!-- <div>
+                    <canvas id="myChart" width="300" height="300"></canvas>
+                  </div> -->
+
+                  <!-- Estategias REcomendadas -->
+                  <div class="card-body">
+                    <div class="callout callout-danger">
+                      <h5>Estrategias Recomendadas </h5>
+
+                      <ul>
+                        <li id="op1" ></li>
+                        <li id="op2"></li>
+                        <li id="op3"></li>
+                        <li id="op4"></li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="callout callout-success">
+                      <h4 id="msj"> </h4>
+
+
+                    </div>
+                  </div>
+
+
+                  <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+
+          </div>
+
+      </div><!-- /.container-fluid -->
+
+
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Septimo 2020-II
+    </div>
+    <!-- Default to the left -->
+    <strong>Dirección Estrategica <a href="#">Matriz PEEA</a>.</strong> FIS.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- peea -->
+
+<script src="../src/financiero.js"></script>
+<script src="../src/vcompetitiva.js"></script>
+<script src="../src/estEntorno.js"></script>
+<script src="../src/fIndustria.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="../src/resultado.js"></script>
+<script src="../src/chart.js"></script>
+<script src="../src/rombo.js"></script>
+<script src="../src/random_ff.js"></script>
+<script src="../src/random_vc.js"></script>
+<script src="../src/random_ee.js"></script>
+<script src="../src/random_fi.js"></script>
+
+</body>
+</html>
